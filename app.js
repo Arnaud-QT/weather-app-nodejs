@@ -13,21 +13,7 @@ const geocode = require('./utils/geocode')
 //     }
 // })
 
-// const geocodeURL = ('https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.eyJ1IjoiYXJuYXVkcXQiLCJhIjoiY2tnZTJ2aWsxMDhvMzJzdDl1cnhpeHo2NyJ9.g4vgJppphaJiwVqRVj4XFg&limit=1')
 
-// request({ url: geocodeURL, json: true }, (error, response) => {
-//     if (error) {
-//         console.log('Unable to connect to the server.')
-//     } else if(response.body.features.length === 0) {
-//         console.log('No location found.')
-//     }
-//     else {
-//         const latitude = response.body.features[0].center[1]
-//         const longitude = response.body.features[0].center[0]
-
-//         console.log(latitude, longitude)
-//     }
-// })
 
 
 geocode('Boston', (error, data) => {
